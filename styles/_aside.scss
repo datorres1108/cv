@@ -1,0 +1,11 @@
+.sidebar{
+    background:$colores-aside;
+    padding: 20px;
+    border-radius: 4px;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}

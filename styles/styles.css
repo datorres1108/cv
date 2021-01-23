@@ -1,3 +1,65 @@
 @charset "UTF-8";
 /*Archivos parciales - segmentación de estilos y funcionalidades*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #040404;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+}
+
+.header {
+  background: #BDBDBD;
+  padding: 20px;
+  border-radius: 4px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.contenido {
+  background: #fff;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.sidebar {
+  background: #B8F3ED;
+  padding: 20px;
+  border-radius: 4px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: -1;
+  text-align: center;
+}
+
+.fouter {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+}
 /*# sourceMappingURL=styles.css.map */
