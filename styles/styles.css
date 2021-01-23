@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Archivos parciales - segmentación de estilos y funcionalidades*/
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,15 +12,16 @@ body {
   background: #FFFFFF;
   color: #040404;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .contenedor {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 10px auto;
   display: -ms-grid;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 20px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  background: #BDBDBD;
+  background: #E7F2F1;
   padding: 20px;
   border-radius: 4px;
   -ms-grid-column: 2;
@@ -37,15 +37,87 @@ body {
   grid-column-end: -1;
 }
 
+.header h1 {
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+
 .contenido {
   background: #FFFFFF;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: -1;
+  text-align: justify;
+}
+
+.contenido h2 {
+  color: #040404;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+  font-size: 30px;
+}
+
+.contenido .contenido-experiencia {
+  margin: 0.1em;
+  padding: 0.5em;
+  text-align: justify;
+}
+
+.contenido .contenido-experiencia h3 {
+  color: #5B91F1;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+
+.contenido .contenido-estudios {
+  margin: 0.1em;
+  padding: 0.5em;
+  text-align: justify;
+}
+
+.contenido .contenido-estudios h3 {
+  color: #5B91F1;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+
+.contenido .contenido-estudios h3 a {
+  color: #5B91F1;
+  text-decoration: none;
+}
+
+.contenido .contenido-estudios a {
+  color: #040404;
+  text-decoration: none;
+}
+
+.contenido .contenido-estudios a:hover {
+  background-color: #D9E3F5;
+}
+
+.contenido .contenido-certificados {
+  margin: 0.1em;
+  padding: 0.5em;
+  text-align: justify;
+}
+
+.contenido .contenido-certificados h3 {
+  color: #5B91F1;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+}
+
+.contenido .contenido-certificados h3 a {
+  color: #5B91F1;
+  text-decoration: none;
+}
+
+.contenido .contenido-certificados a {
+  color: #040404;
+  text-decoration: none;
+}
+
+.contenido .contenido-certificados a:hover {
+  background-color: #D9E3F5;
 }
 
 .sidebar {
-  background: #B8F3ED;
+  background: #5B91F1;
   padding: 20px;
   border-radius: 4px;
   -ms-grid-row: 1;
@@ -63,7 +135,6 @@ body {
 .sidebar .avatar {
   height: 200px;
   width: 200px;
-  background: #a4a4a4;
   border-radius: 100%;
 }
 
@@ -73,8 +144,16 @@ body {
   border-radius: 100%;
 }
 
+.sidebar .descripcion {
+  width: 50%;
+  height: 20%;
+  color: blanchedalmond;
+  background: #a4a4a4;
+  border: solid black 1px;
+}
+
 .fouter {
-  background: #ffffff;
+  background: #30e718;
   padding: 20px;
   border-radius: 4px;
   -ms-grid-column: 1;

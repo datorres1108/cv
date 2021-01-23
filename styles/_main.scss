@@ -2,4 +2,66 @@
     background: $colores-body;
     grid-column-start: 2;
     grid-column-end: -1;
+    text-align:justify;
+    h2{
+        color: $color-titulos-contenido;
+        font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+        font-size: $tamano-titulos-contenido;
+    }
+    .contenido-experiencia{
+        margin: 0.1em;
+        padding: 0.5em;
+        text-align:justify;
+        h3{
+            color:$color-subtitulos-contenido;
+            font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+        }
+    }
+    .contenido-estudios{
+        margin: 0.1em;
+        padding: 0.5em;     
+        text-align:justify;
+        h3{
+            color:$color-subtitulos-contenido;
+            font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+            a{
+                color:$color-subtitulos-contenido;
+                text-decoration: none;
+            }
+        }
+
+        a{
+            color: $colores-letras-body;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color:$shadow;
+           
+        }
+    }
+
+    .contenido-certificados{
+        margin: 0.1em;
+        padding: 0.5em; 
+        text-align:justify;    
+        h3{
+            color:$color-subtitulos-contenido;
+            font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+            a{
+                color:$color-subtitulos-contenido;
+                text-decoration: none;
+            }
+        }
+
+        a{
+            color: $colores-letras-body;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color:$shadow;
+           
+        }
+    }
 }
