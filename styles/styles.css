@@ -21,16 +21,17 @@ body {
   margin: 10px auto;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (auto)[4];
-      grid-template-rows: repeat(4, auto);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
 }
 
 .header {
   background: #E7F2F1;
-  padding: 20px;
+  padding: 10px;
+  margin: 0.5em;
   border-radius: 4px;
   -ms-grid-column: 2;
       grid-column-start: 2;
@@ -118,18 +119,25 @@ body {
 
 .sidebar {
   background: #5B91F1;
-  padding: 20px;
+  padding: 10px;
+  margin: 0.5em;
   border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: -1;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sidebar .avatar {
@@ -144,16 +152,69 @@ body {
   border-radius: 100%;
 }
 
-.sidebar .descripcion {
-  width: 50%;
+.sidebar ul {
+  list-style: none;
+  padding: 1em;
+  margin: 1em;
+}
+
+.sidebar ul li {
+  padding: 3px;
+  margin: 3px;
+}
+
+.sidebar .descripcion_habilidades {
+  width: 100%;
   height: 20%;
-  color: blanchedalmond;
-  background: #a4a4a4;
-  border: solid black 1px;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #D9E3F5;
+}
+
+.sidebar .descripcion_habilidades p {
+  text-align: justify;
+}
+
+.sidebar .descripcion_habilidades .iconos {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sidebar .descripcion_habilidades .iconos .iconos-ico {
+  width: 40px;
+  height: 45px;
+  border-radius: 40px;
+}
+
+.sidebar .descripcion_habilidades .iconos-textos {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px;
+}
+
+.sidebar .descripcion_habilidades .iconos-textos a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sidebar .descripcion_habilidades .iconos-textos a:hover {
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: #D9E3F5;
+  border-radius: 40px;
+  color: #040404;
 }
 
 .fouter {
-  background: #30e718;
+  background: #E7F2F1;
   padding: 20px;
   border-radius: 4px;
   -ms-grid-column: 1;

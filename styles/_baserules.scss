@@ -16,7 +16,7 @@ body{
     max-width: 1000px;
     margin: 10px auto;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr); //Divido area de trabajo en 3 columnas
-    grid-template-rows: repeat(4, auto); //Creo 4 filas
+    grid-template-rows: repeat(3, auto); //Creo 4 filas
 }
