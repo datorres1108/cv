@@ -20,3 +20,31 @@ body{
     grid-template-columns: repeat(3, 1fr); //Divido area de trabajo en 3 columnas
     grid-template-rows: repeat(3, auto); //Creo 4 filas
 }
+
+//parametros responsive
+@media screen and (max-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: repeat(1, 1fr); //Divido area de trabajo en 3 columnas
+        grid-template-rows: repeat(1, auto); //Creo 4 filas
+      
+        header{
+            grid-column-start: -1;
+            grid-column-end: 1;
+        }
+
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: -1;
+        }
+
+        .contenido{
+            margin: 0.1em;
+            padding: 0.5em;
+            grid-column-start: 1;
+            grid-column-end: -1;
+     
+        }
+    }
+}
