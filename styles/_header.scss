@@ -7,5 +7,11 @@
     grid-column-end: -1;
     h1{
         font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+        font-size: $tamano-titulos-contenido;
+        color:$shadow;
+    }
+    p{
+        text-align:justify;
+        color: $shadow;
     }
 }
